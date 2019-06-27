@@ -1,0 +1,94 @@
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+  }
+
+
+html, body {
+     width: 100%;
+     overflow-x: hidden;
+  }
+
+p {
+  line-height: 28px;
+  font-size: 15px;
+}
+
+a {
+  outline: none !important;
+}
+
+.medium-icon {
+  font-size: 32px !important;
+}
+
+.img-responsive {
+    display: inline-block;
+}
+
+/* ==========================================================================
+Labels Section
+========================================================================== */
+#labels {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #3b3b3b;
+    color: #ffff;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+}
+#labels .strong {
+    font-size: 50px;
+    font-weight: bold;
+    color: #10629e;
+    text-transform: uppercase;
+}
+#labels hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+}
+#labels .evlogo img {
+    max-width: 150px;
+}
+hr {
+  width: 180px;
+  border-color: #CCC;
+}
+
+/* ==========================================================================
+Description Section
+========================================================================== */
+#des {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+#des h2 {
+    color: #10629e;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(50, 50, 50, 0.5);
+}
+#des hr {
+    width: 300px;
+}
+
+/* ==========================================================================
+Assistants Section
+========================================================================== */
+#ass {
+    text-align: center;
+    color: #10629e;
+}
+#ass strong {
+    color: #10629e;
+}
+#ass .navbar {
+    padding: 10px;
+}
+#ass .navbar-default {
+    background-color: #d9d9d9;
+    border-color: #c5c5c5;
+}

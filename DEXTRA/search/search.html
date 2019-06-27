@@ -1,0 +1,109 @@
+<?php
+$user_name = "jinnahhi";
+$password = "9SvK4z9l7y";
+$database = "jinnahhi_dextra_registrations";
+$server = "localhost:3306";
+
+mysql_connect("$server","$user_name","$password");
+
+mysql_select_db("$database");
+$output = '';
+
+//collect
+if (isset($_POST['search'])) {
+    $searchq = $_POST['search'];
+    $searchq = preg_replace("#[^a-z]#i","",$searchq);
+    
+    $query = mysql_query("SELECT * FROM dextra WHERE name LIKE '%$searchq%'") or die("could not search");
+    $count = mysql_num_rows($query);
+    if($count == 0) {
+        $output = 'There were no search results';
+    }else{
+        while($row = mysql_fetch_array($query)) {
+            $name = $row['name'];
+            $id = $row['ID'];
+            $status = $row['status'];
+
+            $output .= ''.$name.' '.$status.'';
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>DEXTRA - Search</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/et-line-font.css">
+	<link rel="stylesheet" href="../css/nivo-lightbox.css">
+	<link rel="stylesheet" href="../css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500" type='text/css'>
+    <link rel="icon" href="images/logos/icon.png" sizes="32x32" />
+    
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- Preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-circle">
+       <div class="sk-circle1 sk-circle"></div>
+       <div class="sk-circle2 sk-circle"></div>
+       <div class="sk-circle3 sk-circle"></div>
+       <div class="sk-circle4 sk-circle"></div>
+       <div class="sk-circle5 sk-circle"></div>
+       <div class="sk-circle6 sk-circle"></div>
+       <div class="sk-circle7 sk-circle"></div>
+       <div class="sk-circle8 sk-circle"></div>
+       <div class="sk-circle9 sk-circle"></div>
+       <div class="sk-circle10 sk-circle"></div>
+       <div class="sk-circle11 sk-circle"></div>
+       <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+
+<!-- About section -->
+<section id="dextra">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+				<div class="section-title">
+                    <h1><strong>DEXTRA REGISTRATIONS</strong></h1>
+					<h2 class="heading bold">Look for your team status</h2>
+					<hr>
+				</div>
+                <div class="col-sm-12">
+                    <h2>Search here</h2>
+                    <form action="search.php" method="post">
+                      <input name="search" type="text" placeholder="Search for the head delegate name..." size="50" maxlength="40"><br><br>
+                      <input name="myBtn" type="submit" value="Search">
+                      <br><br>
+                    </form>
+                    <p>If the search does not show your team status, please contact Registrations department for any queries or visit our  <a href="http://www.facebook.com/dextrajh">Facebook Page</a> </p>
+                </div>
+			</div>
+        </div>
+    </div>
+</section>
+    
+    <?php print("$output");?>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/smoothscroll.js"></script>
+<script src="../js/isotope.js"></script>
+<script src="../js/imagesloaded.min.js"></script>
+<script src="../js/nivo-lightbox.min.js"></script>
+<script src="../js/jquery.backstretch.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+</html>

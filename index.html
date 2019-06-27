@@ -1,0 +1,616 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $(window).on('load', function(){
+                $('.preloader').hide();
+            })
+        </script>
+<!--
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+-->
+        <div class="preloader">
+            <div class="ring">
+                Loading
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand"><img src="assets/icons8-white.png" width="30px"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#AboutMe">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#SocialMedia">Social Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ContactMe">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+<!--        HEADER SECTION-->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="intro">
+                        <h1 data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Owais Ahmad</h1>
+                        <hr />
+                        <h2>BSCS <span class="break">|</span> NUST <span class="break">|</span> ISLAMABAD</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+<!--        ABOUT SECTION-->
+
+        <section id="AboutMe" class="py-6">
+            <h1>About Me</h1>
+            <hr />
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12">
+                        <div class="stand-out">
+                        <p>Creator<br>Thinker<br>Fixer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-12">
+                        <p>My name is Owais Ahmad and I am at sophomore at National University of Science and Technology. I am graduating in about two years with BS Computer Science and I have a keen interest in IoT and Embedded Systems. </p>
+
+                    </div>
+
+                    <div class="col-lg-5 col-sm-12">
+                        <p>Over last four years I have participated in various projects on Embedded System and also worked as a Research Assistant at SEECS Iot Lab. I am motivated to turn things around in this feild of work.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 imageContainer" style="text-align: center;">
+                        <img  data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" src = "assets/mypic.JPG" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 imageContainer" style="text-align: left;">
+                        <div class="interests">
+                            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" src="assets/cricket.png" width="60px">
+                            <h2 style="display: inline;">Cricket Enthusiast</h2>
+                            <p class="text-muted">Since childhood I have been a great fan of Cricket. Cricket brings us all together be it families or friends. Its a major sport of Pakistan and I hope Pakistan always has remains successful in it. </p>
+                        </div>
+
+                        <div class="interests">
+                            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" src="assets/soccer-ball.png" width="60px">
+                            <h2 style="display: inline;">Football Lover</h2>
+                            <p class="text-muted">Watch football just maily because of the two Legends of the game Messi and Ronaldo. Those UCl nights are just love.</p>
+                        </div>
+
+                        <div class="interests">
+                            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" src="assets/camera.png" width="60px">
+                            <h2 style="display: inline;">Photographer</h2>
+                            <p class="text-muted">Apart from my usuals I am a part-time photographer too. Too capture the beautiful moments, potraits and scenery gives a great satisfaction and provides escapae from reality at times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--        SKILLS SECTION-->
+
+        <section id="Skills" class="py-6">
+            <h1>Skills</h1>
+            <hr />
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-sm-6">
+                    <h2>Python</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 py-1">
+                        <div class="progress">
+                            <div data-aos="python" data-aos-delay="50" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                    <h2>Machine Learning</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 py-1">
+                        <div class="progress">
+                            <div data-aos="ML" data-aos-delay="50" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                    <h2>Deep Learning</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 py-1">
+                        <div class="progress">
+                            <div data-aos="DL" data-aos-delay="50" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                    <h2>Web Enigneering</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 py-1">
+                        <div class="progress">
+                            <div data-aos="WE" data-aos-delay="50" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                    <h2>Object Oriented Programming</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 py-1">
+                        <div class="progress">
+                            <div data-aos="OOP" data-aos-delay="50" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Projects" class="py-6">
+            <h1>Work</h1>
+            <hr />
+
+
+            <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Websites</a></li>
+                <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Photos</a></li>
+            </ul>
+
+            <div class="tab-content py-5" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-12 box">
+                            <i data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" class="fas fa-book-reader icon"></i>
+                            <h3>Library Management System</h3>
+                            <p>We made a Library Management System using C in which the special feauture was that it stored the data dynamically. Heaps were used instead of stacks and thats a big thing in first semester.</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 box">
+                            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" src="assets/icon2.png" width="100px" height="100px" class="iconImg">
+                            <h3>Pathfinder using Genetic Algorithm</h3>
+                            <p>We made a Neural Network Pathfinding agent using Core Concepts of OOP in Java without using any pre-existing libraries. The famous algorithm called "Genetic Algorithm" was used to train our agent. At the end of training the agent was able to sucessfully avoid obstacles and reach its destination.</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 box">
+                            <i data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" class="fas fa-university icon"></i>
+                            <h3>Research on Study Techniques of Students</h3>
+                            <p>Conducted a survey and analysed the results to complete our research.</p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="web">
+                                <a href="#"><img class="img-fluid" src="assets/RAAR.PNG" alt=""></a>
+                                <h2 class="mt-3">RAAR RIDES</h2>
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <h4>RAAR Rides</h4>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#RAARModal">View</button>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+
+                            <div class="web">
+                                <a href="#" class="web"><img class="img-fluid" src="assets/NDS.PNG" alt=""></a>
+                                <h2 class="mt-3">NUST DEBATING SOCIETY</h2>
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <h4>Nust Debating Society</h4>
+                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#NDSModal">View</button>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+
+                            <div class="web">
+                                <a href="#" class="web"><img class="img-fluid" src="assets/Dextra.PNG" alt=""></a>
+                                <h2 class="mt-3">DEXTRA</h2>
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <h4>DEXTRA</h4>
+                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#DextraModal">View</button>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+
+                            <div class="web">
+                                <a href="#" class="web"><img class="img-fluid" src="assets/jhmun.PNG" alt=""></a>
+                                <h2 class="mt-3">JINNAH HIGHS MODEL UNITED NATIONS</h2>
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <h4>Jinnah Highs Model United Nations</h4>
+                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#JHMUNModal">View</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container-fluid">
+                        <div class="row no-gutter">
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/1.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/1.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/2.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/2.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/3.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/3.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/4.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/4.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/5.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/5.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/6.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/6.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/7.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/7.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/8.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/8.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/9.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/9.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/10.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/10.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/11.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/11.JPG';">View</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 imgbox">
+                                <img src="portfolio/12.JPG" class="img-fluid">
+                                <div class="overlay"></div>
+                                <span class="overlay-text">
+                                    <button class="btn btn-primary" onclick="window.location='portfolio/12.JPG';">View</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="DextraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe src="DEXTRA/index.html" width="100%" height="400px" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="JHMUNModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe src="JHMUNWEB/index.html" width="100%" height="400px" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="RAARModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe src="RaarRides/index.html" width="100%" height="400px" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="NDSModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe src="NDSWEBSITE/index.html" width="100%" height="400px" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section id="SocialMedia" class="py-6">
+
+            <h1>Social Media</h1>
+            <hr />
+
+            <!-- InstaWidget -->
+<!-- InstaWidget -->
+<!-- LightWidget WIDGET -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+                        <a class="twitter-timeline" data-height="830" href="https://twitter.com/Owais_ahmd?ref_src=twsrc%5Etfw">Tweets by Owais_ahmd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-lg-6 col-sm-12" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BvSEeERhANb/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BvSEeERhANb/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BvSEeERhANb/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Koja Bacha is back again!!!</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/m.owaisahmad/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Owais Ahmad</a> (@m.owaisahmad) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-03-21T19:37:09+00:00">Mar 21, 2019 at 12:37pm PDT</time></p></div></blockquote> <script async src="http://www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section id="ContactMe" class="py-6">
+
+            <h1>Until Next Time</h1>
+            <hr />
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12 mx-auto" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
+                        <div class="card card-signin flex-row my-5">
+                            <div class="card-img-left">
+
+                                <div class="row py-4">
+                                    <div class="col-md-2">
+                                        <i class="fas fa-map-marker fa-4x" aria-hidden="true" style="color: #c1ca00;"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 style="color:#fff;">Address</h2>
+                                        <p class="text-muted" style="font-size: 12px;">House # 328-D,<br>Wapda Town, <br> Multan.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row py-4">
+                                    <div class="col-md-2">
+                                        <i class="fas fa-envelope fa-4x" aria-hidden="true" style="color: #c1ca00;"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 style="color:#fff;">E-Mail</h2>
+                                        <p class="text-muted" style="font-size: 12px;">m.owais4014@gmail.com<br>oahmad.bscs17seecs@seecs.edu.pk</p>
+                                    </div>
+                                </div>
+
+                                <div class="row py-4">
+                                    <div class="col-md-2">
+                                        <i class="fas fa-phone fa-4x" aria-hidden="true" style="color: #c1ca00;"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 style="color:#fff;">Phone</h2>
+                                        <p class="text-muted" style="font-size: 12px;">0092 312 6400401<br>0092 61 6513880</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <form class="form-contact">
+                                    <div class="row">
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="form-label-group">
+
+                                                    <input type="fname" id="fname" class="form-control" placeholder="First Name" required>
+                                                    <label for="fname">First Name</label>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="form-label-group">
+
+                                                    <input type="lname" id="lname" class="form-control" placeholder="Last Name" required>
+                                                    <label for="lname">Last Name</label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="form-label-group">
+                                        <input type="text" id="inputUserame" class="form-control" placeholder="Username" required>
+                                        <label for="inputUserame">Email</label>
+                                    </div>
+
+                                      <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                        <label for="inputEmail">Subject</label>
+                                      </div>
+
+                                     <div class="form-label-group">
+                                        <textarea class="form-control" id="complaints" rows="4"></textarea>
+                                        <label for="complaints">Your message</label>
+                                    </div>
+
+                                        <button class="btn btn-lg btn-primary mx-auto text-uppercase" type="submit">Send</button>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <p class="text-muted" style="text-align: left;">Copyright 2019</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center">
+                        <ul class="social-icon">
+					       <li><a href="https://www.facebook.com/owais4014/" target="_blank" class="fab fa-facebook-f" id="fb"></a></li>
+					       <li><a href="https://www.instagram.com/m.owaisahmad/" target="_blank" class="fab fa-instagram" id="ins"></a></li>
+					       <li><a href="https://www.snapchat.com/m.owais4014/" target="_blank" class="fab fa-snapchat" id="sc"></a></li>
+				        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <p class="text-muted" style="text-align: right;">Owais Ahmad</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            $(function(){
+                $(document).scroll(function(){
+                    var $nav = $('.navbar');
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                })
+            })
+        </script>
+
+<!--        Smooth Scroll-->
+        <script>
+            $(document).ready(function() {
+		      $('.navbar .navbar-nav a[href*="#"]').bind('click', function(e) {
+                    e.preventDefault(); // prevent hard jump, the default behavior
+
+				    var target = $(this).attr("href"); // Set the target as variable
+
+				    // perform animated scrolling by getting top-position of target-element and set it as scroll target
+				    $('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				    }, 600, function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				        });
+
+				    return false;
+		      });
+            });
+
+            $(window).scroll(function() {
+		          var scrollDistance = $(window).scrollTop();
+
+		          // Show/hide menu on scroll
+		          //if (scrollDistance >= 850) {
+		          //		$('nav').fadeIn("fast");
+		          //} else {
+		          //		$('nav').fadeOut("fast");
+		          //}
+
+		          // Assign active class to nav links while scolling
+		          $('section').each(function(i) {
+				    if ($(this).position().top <= scrollDistance) {
+						$('.navbar .navbar-nav a.active').removeClass('active');
+						$('.navbar .navbar-nav a').eq(i).addClass('active');
+				    }
+		          });
+            }).scroll();
+        </script>
+
+    </body>
+</html>

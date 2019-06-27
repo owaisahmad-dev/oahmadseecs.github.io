@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>DEXTRA - Register!</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p#showhide").show();
+            $("input[name=deltype]").on("click",function(){
+                var selectedValue = $("input[name=deltype]:checked").val();
+                if(selectedValue == "private"){
+                    $("p#showhide").hide();
+                }else if(selectedValue == "institution"){
+                    $("p#showhide").show();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("div#gamepref").hide();
+            $("input[name=option]").on("click",function(){
+                var selectedValue = $("input[name=option]:checked").val();
+                if(selectedValue == "no"){
+                    $("div#gamepref").hide();
+                }else if(selectedValue == "yes"){
+                    $("div#gamepref").show();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<!-- Header section -->
+<section id="header">
+    <div class="container">
+       <div class="row">
+             <div class="col-xs-12 col-sm-3">
+               <img class="img img-responsive" src="img/dex.png">
+             </div>
+             <div class="col-xs-12 col-sm-6">
+               <img class="img img-responsive" src="img/homelogo.png" />
+             </div>
+             <div class="col-xs-12 col-sm-3">
+               <img class="img img-responsive" src="img/bta.png">
+             </div>
+       </div>
+    </div>
+</section>
+    
+<div class="container">
+<!-- Label section -->
+<div class="row">
+    <div class="col-xs-12">
+        <h1 id="lab">Registration Form</h1>
+    </div>
+</div>
+        
+    <!-- Form Start -->
+    <form action="action.php" method="POST">
+        <div class="row">
+            <!-- Team Information -->
+            <div class="col-xs-12">
+                <fieldset class="col-xs-12">
+                    <legend>Team Information</legend>
+                    <p>Type of Delegation?</p>
+                        <input type="radio" id="private" name="deltype" value="private" required />
+                        <label for="private">Private</label><br/>
+                        <input type="radio" id="institution" name="deltype" value="institution" />
+                        <label for="institution">Institution</label>
+                    <p id="showhide">
+                        School Name: <br><input id="schoolname" type="text" name="schoolname" size="20" required>
+                    </p>
+                    <p>
+                        City: <br><input type="text" name="city" size="20" required>
+                    </p>
+                    <p>
+                        Number of Delegates:
+                        <select style="max-width:250px" name="delsize" required>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p>
+                        Number of Delegates Requiring Accomodation:
+                        <select style="max-width:250px;" name="accsize" required>
+                            <option value="0">0</option>                        
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Preference -->
+            <div class="col-xs-12">
+                <fieldset class="col-xs-12">
+                    <legend>Event Pereference</legend>
+                    <p>You are interested in...<br>
+                        (Select any 3)
+                    </p>
+                    <input name="ev[]" type="checkbox" value="sintl" id="sintl" />
+                    <label for="sintl">Sky is not the Limit</label><br>
+                    <input name="ev[]" type="checkbox" value="tt" id="tt" />
+                    <label for="tt">Time Travel</label><br>
+                    <input name="ev[]" type="checkbox" value="mtwi" id="mtwi" />
+                    <label for="mtwi">Minute to win it</label><br>
+                    <input name="ev[]" type="checkbox" value="pg" id="pg" />
+                    <label for="pg">Pokemon Go</label><br>
+                    <input name="ev[]" type="checkbox" value="gm" id="gm" />
+                    <label for="gm">Grey Matter</label><br>
+
+                    <p>Do you want to participate in Gaming Takedown?</p>
+                    <input type="radio" id="yes" name="option" value="yes" required />
+                    <label for="yes">Yes</label><br/>
+                    <input type="radio" id="no" name="option" value="no" />
+                    <label for="no">No</label>
+                    <p>
+                        
+                    <div class="col-xs-12" id="gamepref">
+                        <p>Choose any 2 of your favourite games:</p>
+                        <input name="gp[]" type="checkbox" value="cod" id="cod" />
+                        <label for="cod">Call of Duty</label><br>
+                        <input name="gp[]" type="checkbox" value="fifa" id="fifa" />
+                        <label for="fifa">FIFA</label><br>
+                        <input name="gp[]" type="checkbox" value="tekken" id="tekken" />
+                        <label for="tekken">Tekken</label><br>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-xs-12">
+                <fieldset class="col-xs-12">
+                <legend>Contact Information</legend>
+                <legend>Head Delegate</legend>
+                    <p>
+                        Name: <input type="text" name="name1" size="14" required>
+                    </p>
+                    <p>
+                        Phone Number: <input type="telephone" name="number1" size="20" required>
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email1" size="20" required>
+                    </p>    
+                        
+                <legend>Delegate 2</legend>
+                    <p>
+                        Name: <input type="text" name="name2" size="14" required>
+                    </p>
+                    <p>
+                        Phone Number: <input type="telephone" name="number2" size="20" required>
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email2" size="20" required>
+                    </p>    
+                        
+                <legend>Delegate 3</legend> 
+                    <p>
+                        Name: <input type="text" name="name3" size="14" required>
+                    </p>
+                    <p>
+                        Phone Number: <input type="telephone" name="number3" size="20" required>
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email3" size="20" required>
+                    </p>    
+                        
+			     <legend>Delegate 4</legend>
+                    <p>
+                        Name: <input type="text" name="name4" size="14">
+                    </p>
+                    <p>
+                        Phone Number: <input type="telephone" name="number4" size="20">
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email4" size="20">
+                    </p>    
+                        
+                <legend>Delegate 5</legend>
+                    <p>
+                        Name: <input type="text" name="name5" size="14">
+                    </p>
+                    <p>
+                        Phone Number: <input type="telephone" name="number5" size="20">
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email5" size="20">
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Why Choose Us -->
+            <div class="col-xs-12 roi">
+                <fieldset class="col-xs-12">
+                    <p>Reason of Interest?<br>(optional)</p>
+                    <textarea class="form-control" name="interest" rows="10" cols="100" required></textarea>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6" style="margin-top: 20px; text-align: center;">
+                <input class="btn" type="submit" name="submit" value="Submit">
+            </div>
+            <div class="col-xs-12 col-sm-6" style="margin-top: 20px; text-align: center;">
+                <input class="btn" type="reset" value="Reset">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

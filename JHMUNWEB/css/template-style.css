@@ -1,0 +1,664 @@
+/*===============================================================================
+               LOADER
+  ===============================================================================*/
+
+/*===============================================================================
+               MAIN STREAM CSS
+  ===============================================================================*/
+body {
+	background: url(../img/mun%20bg.png);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+#first-block, #second-block,  #fourth-block, #info {
+	text-align: center;
+	padding: 4.5rem 0;
+}
+section h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
+}
+p.subtitile {
+	color: #999;
+	margin: 0 0 3.5rem;
+}
+section h3 {
+	font-size: 1.3rem;
+	font-weight: 300;
+	margin: 0.8rem 0;
+	text-transform: uppercase;
+}
+section p {
+	font-size: 0.8rem;
+}
+section h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  body {
+  	background: none repeat scroll 0 0 rgb(0, 30, 34);
+  }
+  nav {
+  	background: none repeat scroll 0 0 rgb(0, 30, 34);
+  	line-height: 1rem;
+  	position: relative;
+  }
+  .top-nav {
+  	text-align: left;
+  }
+  .top-nav li {
+  	line-height: 3rem;
+  }
+  .top-nav .logo {
+  	padding: 1.25rem;
+  }
+  .carousel-text h2 {
+  	font-size: 1.3rem;
+  }
+  .carousel-text p {
+  	font-size: 1rem;
+  }
+  ul.top-ul {
+  	padding: 0;
+  }
+  ul.top-ul.right {
+  	float: none;
+  }
+  footer {
+  text-align: center;
+  }
+  footer .right {
+  float: none;
+  }
+}
+/*===============================================================================
+               NAVBAR
+  ===============================================================================*/
+nav {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	position: fixed;
+	top: 0;
+	z-index: 500;
+}
+.top-nav {
+	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
+}
+.top-nav ul {
+	padding: 0;
+}
+.logo {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+.top-nav li a {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+.top-nav .logo a, .top-nav .logo.active-item a {
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1rem;
+}
+.top-nav .logo a strong {
+  font-weight: 800;
+  line-height: 1.5;
+}
+.top-nav {
+	text-align: center;
+}
+.top-nav li a:hover, .top-nav li.active-item a, .top-nav .logo.active-item a:hover {
+	background: none repeat scroll 0 0 #85A1C3;
+}
+.top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo {
+	background: none repeat scroll 0 0 #85A1C3;
+}
+.top-nav li .active {
+    background: none repeat scroll 0 0 #85A1C3;
+    
+}
+nav ul li ul li {
+	text-align: left;
+}
+.top-nav ul ul {
+	background: none repeat scroll 0 0 rgb(0, 30, 34);
+}
+.top-nav li ul li a {
+	background: none repeat scroll 0 0 rgb(0, 30, 34);
+}
+
+/*===============================================================================
+               CAROUSEL
+  ===============================================================================*/
+#carousel {
+	background: #fff;
+    max-height: 710px;
+    overflow-y: hidden;
+    
+    
+}
+.carousel-text {
+	display: block;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	z-index: 999;
+}
+.carousel-text h2 {
+	background: none repeat scroll 0 0 transparent;
+	color: #fff;
+	display: block;
+	padding: 0;
+	font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom:-5;    
+}
+.carousel-text h3 {
+	background: none repeat scroll 0 0 transparent;
+	color: #85A1C3;
+	display: inline-block;
+	padding: 0;
+	font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1px;
+        
+}
+.carousel-text p {
+	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
+	color: #fff;
+	display: inline-block;
+	font-size: 1.2rem;
+	padding: 0.625rem 0.8rem;
+}
+#carousel .carousel-text img {margin-top: 2px;}
+#carousel .button {
+    border-radius: 4px;
+  background-color: #85A1C3;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+  font-weight: 800;    
+}
+#carousel .button:hover {
+    background-color: #002125;
+}
+
+
+/*===============================================================================
+               FIRST-BLOCK
+  ===============================================================================*/
+#first-block {
+	background: #fff;
+}
+#first-block h1 {
+    color:#333;
+    margin-bottom:5px;
+}
+#first-block .image-border {
+    border: 3px solid #fff ;
+}
+#first-block i {
+	background: none repeat scroll 0 0 #2fcbe0;
+	border-radius: 100px;
+	color: #fff;
+	display: block;
+	line-height: 100px;
+	margin: 0 auto;
+	width: 100px;
+}
+/*Comitee Section*/
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    }
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:auto;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:20px;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    margin:3px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);
+    display:block;
+    position: relative;
+    overflow:hidden;
+    -webkit-animation-duration: 0.8s;
+  -webkit-animation-delay: 0.3s;
+  -webkit-animation-iteration-count: 1;
+}
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    opacity= 0.0;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #D0A343 no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 0;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:15px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:20%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+.rig-text button {
+    background: transparent;
+    color:white;
+    border: 1px solid white;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+/*===============================================================================
+               SECOND-BLOCK
+  ===============================================================================*/
+
+/*
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+*/
+
+#second-block {
+	background:  none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
+    width:100%;
+    height:370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+#second-block p {
+	color: #fff;
+}
+#second-block .button {
+    border-radius: 4px;
+  background-color: #85A1C3;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+  width: 147px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+#second-block .button:hover {
+    background-color: #002125;
+}
+/*===============================================================================
+               ABOUT
+  ===============================================================================*/
+#info{
+    background-color:#fff;
+    padding-bottom: 15px;
+   }  
+#info .about-headline {
+    border:2px solid #85A1C3;
+/*    border-color: #2fcbe0;*/
+    width: 15%;
+    vertical-align: middle;
+    margin-top: 0;
+}
+#info h1 {
+    text-align: center;
+    color:#000;
+    }
+#info h2 {
+    color:#85A1C3;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#info h3 {
+    color:#85A1C3;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
+}
+#info p {
+    text-align: center;
+}
+#info .item p {
+    text-align: center;
+}
+
+.partner {
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+
+/*===============================================================================
+               THIRD-BLOCK
+  ===============================================================================*/
+
+/*
+#third-block h2 {
+	color: #85A1C3;
+}
+*/
+#third-block p {
+	color: #000;
+    margin: 0 auto;
+}
+#third-block #message-img {
+    max-width: 100px;
+}
+#third-block {
+	background-color: none;
+    padding: 0 0;
+}
+#content2 {
+    background:  none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
+	padding: 5rem 0;
+	text-align: center;
+    
+	
+}
+.labelx {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #85A1C3;
+    font-weight: 500;
+    background-color: none;
+    color:#85A1C3;
+}
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    color:#85A1C3;
+}
+.designation {
+    font-size: 15px;
+    font-weight: 200;
+    color: #85A1C3;
+   
+}
+/*
+#third-block h1, h2 {
+    color:#000;
+    background-color:transparent;
+    text-align: center;
+} 
+*/
+#third-block img {
+    border-radius: 25px;
+    border:2px solid transparent;
+}
+
+.underline {
+    width: 30%;
+    margin-top: 0;
+    border: 1px solid #85A1C3;
+     }
+.underline2x {
+    margin-top: 0;
+    border: 1px solid #85A1C3;
+    margin-bottom: 15px;
+}  
+.my-name {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    color:#85A1C3;
+}
+#fourth-block {
+	background: #002125;
+    border-bottom: 1px solid #f0f0f0;
+}
+#head h1 {
+    font-family: "Playfair Display";
+}
+
+
+/*===============================================================================
+               CONTACT-BLOCK
+  ===============================================================================*/
+#contact-block {
+    background-color: #fff;
+    padding-top: 4.5rem;
+}
+
+
+#contact-head {
+    margin:0 auto;
+    color:darkslategrey;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 20px;
+   
+}
+
+#head {
+	background: none repeat scroll 0 0 rgb(0, 30, 34);
+	padding: 9rem 0 5rem;
+	text-align: center;
+}
+#content {
+	background-color: #fff;
+	padding:0;
+	text-align: center;
+	border-bottom: 1px solid #333;
+}
+#content i {
+	background-color: #85A1C3;
+}
+#content h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin: 1rem 0 0.3rem;
+	text-transform: none;
+    text-align: center;
+}
+.content-block {
+	background: none repeat scroll 0 0 rgb(0, 30, 34);
+	padding: 2.5rem;
+}
+.content-block h3 {
+	color: #fff;
+}
+.content-block p {
+	color: #fff;
+}
+#content.left-align {
+	text-align: left;
+}
+#content.contact-page h2 {
+	margin: 0 0 0.625rem;
+}
+.contact-page p {
+	font-size: 1rem;
+	font-style: normal;
+    text-align: left;
+}
+.contact-page i {
+	background: none repeat scroll 0 0 rgb(0, 30, 34);
+	border-radius: 100px;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	margin: 0.3125rem 0.3125rem 0.3125rem 0;
+	text-align: center;
+	width: 35px;
+}
+form.customform button {
+	background: none repeat scroll 0 0 #85A1C3;
+	border-radius: 5px;
+	transition: background 0.20s linear 0s;
+	-o-transition: background 0.20s linear 0s;
+	-ms-transition: background 0.20s linear 0s;
+	-moz-transition: background 0.20s linear 0s;
+	-webkit-transition: background 0.20s linear 0s;
+    margin-bottom: 20px;
+}
+form.customform button:hover {
+	background: none repeat scroll 0 0 #002125;
+}
+form.customform input, form.customform select, form.customform textarea {
+	border-radius: 5px;
+}
+#map-block iframe {
+	display: block;
+    margin-bottom: 20px
+}
+.id {
+    text-transform: uppercase;
+    font-size: 30px;
+    color:#002125;
+    text-align: center;
+    font-weight: 600;
+}
+
+address {
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+
+/*===============================================================================
+               FOOTER
+  ===============================================================================*/
+
+footer {
+	background: none repeat scroll 0 0 #85A1C3;
+	padding: 1em 0;
+    margin: 0;
+    
+}
+footer p, footer a:link, footer a:visited, footer a:hover {
+	color: #fff;
+}
+.social-icon {
+  padding: 0;
+  margin: 0;
+    text-align: center;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+    margin-top: 0;
+}
+.social-icon li a {
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+    margin: 10px;
+}
+.social-icon li #fb:hover {
+  color: #3b5998;
+}
+
+/*===============================================================================
+               ANIMATION
+  ===============================================================================*/
+
+.classIn {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+}
